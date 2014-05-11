@@ -1,0 +1,2745 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <meta name="description" content="">
+    
+
+    
+    <meta name="author" content="">
+    
+
+    <!--NEW RELIC Start Perf Measurement-->
+    
+    <!--NREND-->
+
+    <!-- Le styles -->
+    <!--<link href="/static/css/bootstrap.css" rel="stylesheet">-->
+    <link href="/static/css/docs.css" rel="stylesheet">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/static/components/animate.css/animate.css" rel="stylesheet">
+    <link href="/static/components/Font-Awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/css/nbviewer.css" rel="stylesheet">
+
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="/static/ico/ipynb_icon_16x16.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/static/ico/apple-touch-icon-57-precomposed.png">
+    
+    
+    
+
+    
+
+    
+    <meta name="twitter:card" content="summary">
+
+    
+    <meta name="twitter:title" content="Notebook on nbviewer">
+    
+
+    
+    <meta name="twitter:description" content="Check out this IPython notebook!">
+    
+
+    
+    <meta name="twitter:domain" content="nbviewer.ipython.org">
+    
+
+    <meta name="twitter:image:src" content="http://ipython.org/ipython-doc/dev/_images/ipynb_icon_128x128.png">
+    
+    
+    
+
+    <link href="/ipython-static/style/ipython.min.css" rel="stylesheet">
+    <link href="/static/css/pygments.css" rel="stylesheet">
+    <style type="text/css" media='screen and (min-width:980px)'>
+   
+    body {
+        padding-top: 40px;
+    }
+
+    </style>
+    <style type="text/css" >
+    .imgwrap {
+        text-align: center;
+    }
+
+    @media (max-width: 767px){
+
+        div.input, div.output_area {
+            -webkit-box-orient: vertical;
+            -moz-box-orient: vertical;
+            box-orient: vertical;
+        }
+
+        div.prompt {
+            text-align:left;
+        }
+
+    }
+
+    
+    </style>
+    
+    <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    init_mathjax = function() {
+        if (window.MathJax) {
+            // MathJax loaded
+            MathJax.Hub.Config({
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    processEscapes: true,
+                    processEnvironments: true
+                },
+                displayAlign: 'center',
+                "HTML-CSS": {
+                    styles: {'.MathJax_Display': {"margin": 0}},
+                    linebreaks: { automatic: true }
+                }
+            });
+            MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+        }
+    }
+    init_mathjax();
+    </script>
+    
+  </head>
+
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+  <!-- These are loaded at the top of the body so they are available to notebook
+  cells when they are loaded below. -->
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/components/requirejs/require.js"></script>
+  <script src="/static/components/moment/min/moment.min.js"></script>
+
+  <!-- Navbar
+  ================================================== -->
+    <div id='menubar' class="navbar navbar-fixed-top hidden-print">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+
+                <li>
+        <a href="/" title="nbviewer" >
+            <strong>
+            <span>nbviewer</span>
+            </strong>
+        </a>
+    </li>
+                <li>
+        <a href="/faq" title="FAQ" >
+            
+            <span>FAQ</span>
+            
+        </a>
+    </li>
+
+              <li class="">
+                <a href="http://www.ipython.org">IPython</a>
+              </li>
+            </ul>
+            <ul class="nav pull-right"> 
+              
+              
+      
+        <li>
+        <a href="https://db.tt/4onLImB0" title="Download Notebook" download>
+            <span class='fa fa-download fa-2x menu-icon'></span>
+            <span class='menu-text'>Download Notebook</span>
+        </a>
+    </li>
+    
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+     
+    
+    
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Review-Final---Vectors,-Lists,-Functions,-and-Classes-in-R">Review Final - Vectors, Lists, Functions, and Classes in R<a class="anchor-link" href="#Review-Final---Vectors,-Lists,-Functions,-and-Classes-in-R">&#182;</a></h1>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[31]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%</span><span class="k">load_ext</span> <span class="n">rmagic</span>
+<span class="o">%</span><span class="k">R</span> <span class="n">rm</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>
+The rmagic extension is already loaded. To reload it, use:
+  %reload_ext rmagic
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[32]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+NL <span class="o">=</span> <span class="kr">function</span><span class="p">()</span> cat<span class="p">(</span><span class="s">&#39;\n\n&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Review Session Topics:</strong></p>
+<p>In this review section, we will focus on some of the key features of the R language: Vectorized computation, arrays, lists, and classes:</p>
+<ul>
+<li><strong>Vectorized programming in R</strong>: vectors and functions</li>
+</ul>
+<ul>
+<li><strong>Object-oriented programming in R</strong>: lists and classes</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>R is an <a href="http://en.wikipedia.org/wiki/Array_programming">array programming language</a> (or vectorized language) which means that its <strong>basic data types</strong> (i.e. numbers, Booleans, and strings) come in the form of <strong>vectors</strong>, which are <strong>homogeneous containers</strong> (or collections) of numbers, strings, or Boolean. This vectorized basic types are particular suited for data analysis, since they are used to store values of <strong>statistical variables</strong> from a <strong>population samble</strong>. A vectors in R corresponds thus to the information stored in  <strong>a data table column</strong>. </p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Parallely, R has a single <strong>basic data structure</strong>, called <code>list</code>, whihc is a <strong>heterogenous container</strong>. List can store collection of element with different types, and can be thought of as representing the information stored in a <strong>data table row</strong>. </p>
+<p>Both vectors and lists are <strong>labelled containers</strong>, which means that their elements can be assigned <strong>labels</strong> or <strong>names</strong>. In terms of statistics, vector labels can be regarded as the <strong>population indivudual names</strong> in a data sample, while list labels can be thought of as the <strong>variable names</strong> in a data table (i.e. the <strong>header labels</strong>).</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Programming with R would have a similar feels, as programming in Python if one is only allowed to use <strong>dictionaries</strong> and <strong>Numpy arrays</strong>. </p>
+<p>There are two ways of programming with <strong>classes and objects</strong> in R. The less used one (<strong>S4 classes</strong>) ressembles much the object-oriented framework in Python, but we didn&#39;t see it in class. The most popular one object-oriented framework in R (<strong>S3 classes</strong>) is very diffent from Python. It is more a set of programming convention to deal with classes and objects, than a strongly enforced OO framework provided by the language. S3 programming is quick and dirty, as one says in programming, and instanciating classes with wrong attributes is very easy...</p>
+<p>Basically, <strong>basic data types (vectors) and basic data structures (lists) can be promoted to classes by setting an the hidden attribute &quot;class&quot;</strong> to a custom name: the name of the class to which we are promoting the given vector or list to. </p>
+<p>Class attributes are stored as named elements of the underlying list, using the <strong>dollar sign operator</strong> <code>X$attributeName</code>, corresponding to the <strong>period operator</strong> in Python: <code>X.attributeName</code>.</p>
+<p>Methods are then normal functions that check the class name and act accordingly. It would be totally possible to program with classes in objects in the R S3 style in Python by using dictionaries, in which we reserve a certain key value pair for holding the class name. </p>
+<p>Data frame are S3 classes used to represent data tables. They come up with a variety of methods to transform, analyse, and visualyse the data contained in the data frame. </p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Vectorized-programming-in-R:-vectors-and-functions">Vectorized programming in R: vectors and functions<a class="anchor-link" href="#Vectorized-programming-in-R:-vectors-and-functions">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Ressources:</strong> Phil Spector Stat 133 lecture notes</p>
+<ul>
+<li><a href="http://www.stat.berkeley.edu/users/spector/s133/R-2a.html">Vectors and Matrices</a></li>
+<li><a href="http://www.stat.berkeley.edu/users/spector/s133/R-6a.html">Functions</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Basic types in R are <strong>vectors</strong>. R does not have <strong>scalar</strong> types as in Python: a single string or a single number is always understood by R as a character or numeric vector <strong>with one element</strong>.</p>
+<p>The elements of a vector are all of the same <strong>mode</strong> or <strong>type</strong>, which are queried using the functions <code>mode(x)</code> and <code>typeof(x)</code> (the latter function having a &quot;finer grain&quot; than the former, since it distinguishes between <code>integer</code> and <code>double</code>. Here are the different types in R:</p>
+<ul>
+<li><strong>numeric vectors:</strong> elements are <em>numbers</em><ul>
+<li><code>mode(x)</code> $\longrightarrow$ <code>numeric</code> </li>
+<li><code>typeof(x)</code> $\longrightarrow$ <code>integer</code> or <code>double</code></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><strong>character vectors:</strong> elements are <em>strings</em><ul>
+<li><code>mode(x), typeof(x)</code> $\longrightarrow$ <code>character</code> </li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><strong>logical vectors:</strong> elements are <em>Booleans</em>, i.e., either <code>TRUE</code> (short: <code>T</code>) or <code>FALSE</code> (short: <code>F</code>)</p>
+<ul>
+<li><code>mode(x), typeof(x)</code> $\longrightarrow$ <code>logical</code> </li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Convertion-between-types">Convertion between types<a class="anchor-link" href="#Convertion-between-types">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Convertions between basic types are possible using the <strong>convertion function family</strong></p>
+<pre><code>as.logical(x)
+as.integer(x)
+as.double(x)
+as.numeric(x)
+as.character(x)
+</code></pre><p>However, not all convertions are possible without loss of information (i.e. one can not or loose information by converting back to the original type). Here is the convertion chain with <strong>no information loss</strong> or errors:</p>
+<p><code>logical</code>$\longrightarrow$<code>integer</code>$\longrightarrow$<code>double</code>
+$\longrightarrow$<code>character</code></p>
+<p><strong>Forcing conversion by going in the opposite arrow direction may result in an error or in a loss of information:</strong></p>
+<ul>
+<li><code>integer</code> $\longrightarrow$ <code>logical</code> will only keep the information of whether the integer is zero or non-zero (see below)</li>
+</ul>
+<ul>
+<li><code>double</code> $\longrightarrow$ <code>integer</code> results in the <strong>decimal part is being lost</strong></li>
+</ul>
+<ul>
+<li><code>character</code> $\longrightarrow$ <code>double</code> returns <strong>missing value</strong> <code>NA</code> provided the string is not a string resulting from the conversion of the lower types to <code>character</code> types (e.g. &quot;34.5&quot; or &quot;0&quot;)</li>
+</ul>
+<p><strong>Conversion involving Booleans are a bit special:</strong> </p>
+<ul>
+<li><code>T</code> $\longleftrightarrow$ 1 and <code>F</code> $\longleftrightarrow$ 0</li>
+</ul>
+<ul>
+<li><code>T</code> $\longleftrightarrow$ &quot;1&quot; and <code>F</code> $\longleftrightarrow$ &quot;0&quot;</li>
+</ul>
+<ul>
+<li><code>T</code> $\longleftrightarrow$ &quot;TRUE&quot; and <code>F</code> $\longleftrightarrow$ &quot;FALSE&quot;</li>
+</ul>
+<ul>
+<li><code>T</code> $\longleftrightarrow$ &quot;true&quot; and <code>F</code> $\longleftrightarrow$ &quot;false&quot;</li>
+</ul>
+<ul>
+<li>non-zero number $\longleftrightarrow$ <code>T</code></li>
+</ul>
+<p><strong>Remark:</strong> These convertions are important when creating data frame for text files in order to understand which <strong>mode</strong> will be assigned to the data frame columns.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[35]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+a <span class="o">=</span> c<span class="p">(</span><span class="k-Variable">T</span><span class="p">,</span> <span class="k-Variable">F</span><span class="p">,</span> <span class="k-Variable">T</span><span class="p">,</span> <span class="k-Variable">F</span><span class="p">,</span> <span class="k-Variable">F</span><span class="p">)</span>
+
+char <span class="o">=</span> as.character<span class="p">(</span>a<span class="p">)</span>
+numb <span class="o">=</span> as.integer<span class="p">(</span>a<span class="p">)</span>
+
+print<span class="p">(</span>char<span class="p">)</span>
+print<span class="p">(</span>numb<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+[1] &quot;TRUE&quot;  &quot;FALSE&quot; &quot;TRUE&quot;  &quot;FALSE&quot; &quot;FALSE&quot;
+[1] 1 0 1 0 0
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[35]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Generating-vectors">Generating vectors<a class="anchor-link" href="#Generating-vectors">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are several way to generate vectors in R. In term of statistics, vectors corresponds to <strong>statitical variables</strong>. Simulating (or generating) variables is an important task in statistics.</p>
+<p><strong>Remark:</strong> Do not confuse the term <em>variable</em> as used in programming (which is just a <strong>name</strong> used to hold a <strong>value</strong>) and the term  <em>variable</em> as used in statistics. Statistical variables correspond to vectors in R. Statistical variables, i.e. vectors, can be stored in R variables. However, R variables can also be used to store lists, data frames, or instances of classes. </p>
+<p>Here is a list of function very useful to generate vectors (hence: statistical variables).</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="http://stat.ethz.ch/R-manual/R-devel/library/base/html/c.html">The <strong>concatenate</strong> function</a> </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[34]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+x <span class="o">=</span> c<span class="p">(</span><span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="p">,</span> <span class="s">&#39;c&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="http://stat.ethz.ch/R-manual/R-devel/library/base/html/rep.html">The <strong>replicate</strong> function</a> </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[11]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+x <span class="o">=</span> rep<span class="p">(</span><span class="k-Variable">T</span><span class="p">,</span> times<span class="o">=</span><span class="m">30</span><span class="p">)</span>
+x <span class="o">=</span> rep<span class="p">(</span>c<span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">4</span><span class="p">),</span> lenght<span class="o">=</span><span class="m">5</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="http://stat.ethz.ch/R-manual/R-devel/library/base/html/seq.html">The <strong>sequence generation</strong> function</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[12]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+x <span class="o">=</span> seq<span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> by<span class="o">=</span><span class="m">5</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="http://stat.ethz.ch/R-manual/R-devel/library/base/html/paste.html">The <strong>string concatenate</strong> function</a> </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[13]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R      
+x <span class="o">=</span> paste<span class="p">(</span>c<span class="p">(</span><span class="s">&#39;X&#39;</span><span class="p">,</span> <span class="s">&#39;Y&#39;</span><span class="p">,</span> <span class="s">&#39;Z&#39;</span><span class="p">),</span> c<span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">),</span> sep<span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="http://stat.ethz.ch/R-manual/R-devel/library/base/html/Colon.html">The <strong>colon operator</strong></a> </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[14]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+x <span class="o">=</span> <span class="m">12</span><span class="o">:</span><span class="m">49</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="http://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html">The <strong>random sample and permutation</strong> function</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[19]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+x <span class="o">=</span> sample<span class="p">(</span><span class="m">100</span><span class="p">)</span>
+y <span class="o">=</span> sample<span class="p">(</span>c<span class="p">(</span><span class="s">&#39;Bob&#39;</span><span class="p">,</span> <span class="s">&#39;Luc&#39;</span><span class="p">,</span> <span class="s">&#39;Martin&#39;</span><span class="p">),</span> <span class="m">100</span><span class="p">,</span> replace<span class="o">=</span><span class="k-Variable">T</span><span class="p">,</span> prob<span class="o">=</span>c<span class="p">(</span><span class="m">0.2</span><span class="p">,</span> <span class="m">0.5</span><span class="p">,</span> <span class="m">0.3</span><span class="p">))</span>
+           
+print<span class="p">(</span>x<span class="p">)</span>
+print<span class="p">(</span>y<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+  [1]  13  53  14  94  25  96  68  12  31  59  85  36  32  18   7  74  87  95
+ [19]  51  46  20  72  69  41  86  77  40  84  90  29  45  60  81  71  15  70
+ [37]  27  30  10  97  34  50  52   1  39  98  92  75  66  57   2  26  93  22
+ [55] 100  58  67   6   3  82  78  88  11  33  16  91  28  62  56   4  63  44
+ [73]  89  65  19  48  35  76  61  49  38  79  24  55  42  99  73  17   5   8
+ [91]  23  80  47  37  83  54   9  21  64  43
+  [1] &quot;Luc&quot;    &quot;Bob&quot;    &quot;Luc&quot;    &quot;Martin&quot; &quot;Luc&quot;    &quot;Martin&quot; &quot;Luc&quot;    &quot;Luc&quot;   
+  [9] &quot;Bob&quot;    &quot;Bob&quot;    &quot;Luc&quot;    &quot;Luc&quot;    &quot;Luc&quot;    &quot;Bob&quot;    &quot;Martin&quot; &quot;Luc&quot;   
+ [17] &quot;Luc&quot;    &quot;Bob&quot;    &quot;Luc&quot;    &quot;Luc&quot;    &quot;Bob&quot;    &quot;Luc&quot;    &quot;Luc&quot;    &quot;Bob&quot;   
+ [25] &quot;Martin&quot; &quot;Martin&quot; &quot;Luc&quot;    &quot;Martin&quot; &quot;Luc&quot;    &quot;Bob&quot;    &quot;Bob&quot;    &quot;Martin&quot;
+ [33] &quot;Martin&quot; &quot;Luc&quot;    &quot;Martin&quot; &quot;Luc&quot;    &quot;Martin&quot; &quot;Bob&quot;    &quot;Luc&quot;    &quot;Martin&quot;
+ [41] &quot;Martin&quot; &quot;Luc&quot;    &quot;Luc&quot;    &quot;Martin&quot; &quot;Bob&quot;    &quot;Luc&quot;    &quot;Luc&quot;    &quot;Bob&quot;   
+ [49] &quot;Luc&quot;    &quot;Bob&quot;    &quot;Martin&quot; &quot;Martin&quot; &quot;Martin&quot; &quot;Luc&quot;    &quot;Bob&quot;    &quot;Martin&quot;
+ [57] &quot;Luc&quot;    &quot;Luc&quot;    &quot;Luc&quot;    &quot;Luc&quot;    &quot;Martin&quot; &quot;Martin&quot; &quot;Luc&quot;    &quot;Martin&quot;
+ [65] &quot;Luc&quot;    &quot;Bob&quot;    &quot;Luc&quot;    &quot;Martin&quot; &quot;Luc&quot;    &quot;Bob&quot;    &quot;Martin&quot; &quot;Martin&quot;
+ [73] &quot;Luc&quot;    &quot;Luc&quot;    &quot;Luc&quot;    &quot;Martin&quot; &quot;Bob&quot;    &quot;Martin&quot; &quot;Luc&quot;    &quot;Martin&quot;
+ [81] &quot;Bob&quot;    &quot;Bob&quot;    &quot;Bob&quot;    &quot;Luc&quot;    &quot;Bob&quot;    &quot;Luc&quot;    &quot;Luc&quot;    &quot;Bob&quot;   
+ [89] &quot;Bob&quot;    &quot;Luc&quot;    &quot;Bob&quot;    &quot;Luc&quot;    &quot;Luc&quot;    &quot;Martin&quot; &quot;Luc&quot;    &quot;Martin&quot;
+ [97] &quot;Bob&quot;    &quot;Luc&quot;    &quot;Martin&quot; &quot;Luc&quot;   
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li><a href="http://stat.ethz.ch/R-manual/R-devel/library/stats/html/Normal.html">The normal random sample function</a> and  <a href="http://stat.ethz.ch/R-manual/R-devel/library/stats/html/Uniform.html">the uniform random sample function</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[20]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+x <span class="o">=</span> rnorm<span class="p">(</span><span class="m">100</span><span class="p">,</span> mean<span class="o">=</span><span class="m">0</span><span class="p">,</span> sd<span class="o">=</span><span class="m">1</span><span class="p">)</span>
+x <span class="o">=</span> runif<span class="p">(</span><span class="m">100</span><span class="p">,</span> min<span class="o">=</span><span class="m">0</span><span class="p">,</span> max<span class="o">=</span><span class="m">1</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Vectorized-code">Vectorized code<a class="anchor-link" href="#Vectorized-code">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>R is a <strong>vectorized</strong> programming language (or <a href="http://en.wikipedia.org/wiki/Array_programming">array programming language</a>): i.e., operations involving <strong>vectors</strong> (1D array), <strong>matrices</strong> (2D array), or more generally $n$-dimensional <strong>array</strong> can be performed with <strong>single</strong> or <strong>atomic instructions</strong>, instead of <strong>loops</strong> accessing the array elements one at a time. For instance, the core of the Python language is not vectorized (one uses loops or list comprehension to iterate over collections), but the Numpy part of the language is vectorized. </p>
+<p>Languages allowing for vectorized computations offer several advantages over standard &quot;collection looping languages:&quot;</p>
+<ul>
+<li><p>The code involving array computations is <strong>clearer</strong> and <strong>shorter</strong>, resulting into a gain of developping time and an easier maintenance</p>
+</li>
+<li><p>When using computers with multiple processors, atomic vectorized instructions will be distributed in parallely over the processors, resulting into a <strong>speed gain</strong>. </p>
+</li>
+</ul>
+<p>The main three array programming languages in the spot lights in data science nowdays are <strong>R</strong>, <strong>Octave</strong> (a GNU version of Mathlab), and <strong>Python with Numpy</strong>. You already know how to use two of them, and learning Octave after this course will be very easy. </p>
+<p>Here is an example of a <strong>non-vectorized code</strong>, where we add two vectors <code>x</code> and <code>y</code> by accessing the elments one at a time in a <code>for</code> loop, add them and store the result into the corresponding component of a previously intialized vector <code>z</code>:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[28]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+x <span class="o">=</span> sample<span class="p">(</span><span class="m">10</span><span class="p">)</span>
+y <span class="o">=</span> sample<span class="p">(</span><span class="m">10</span><span class="p">)</span>
+
+z <span class="o">=</span> rep<span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">10</span><span class="p">)</span>
+<span class="kr">for</span><span class="p">(</span>i <span class="kr">in</span> <span class="m">1</span><span class="o">:</span>length<span class="p">(</span>x<span class="p">)){</span>
+    z<span class="p">[</span>i<span class="p">]</span> <span class="o">=</span> x<span class="p">[</span>i<span class="p">]</span> <span class="o">+</span> y<span class="p">[</span>i<span class="p">]</span>
+<span class="p">}</span>
+
+print<span class="p">(</span>x<span class="p">);</span> print<span class="p">(</span>y<span class="p">);</span> print<span class="p">(</span>z<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+ [1]  1  6  5  8  3  9  7 10  2  4
+ [1]  5  7  9  4  2  6 10  1  8  3
+ [1]  6 13 14 12  5 15 17 11 10  7
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Now we do the same with <strong>vectorized code</strong>, using the <strong>vectorized addition operation:</strong></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[29]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+z <span class="o">=</span> x <span class="o">+</span> y
+print<span class="p">(</span>x<span class="p">);</span> print<span class="p">(</span>y<span class="p">);</span> print<span class="p">(</span>z<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+ [1]  1  6  5  8  3  9  7 10  2  4
+ [1]  5  7  9  4  2  6 10  1  8  3
+ [1]  6 13 14 12  5 15 17 11 10  7
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Another example of standard looping and branching code together with the equivalent vectorized code. Given a vector <code>x</code> of integers between 1 and 10, we want to keep only those integers that are above 5. </p>
+<p><strong>Make sure that you understand that the vectorized equivalent of branching statements in a loop is usually achieved using logical indexing.</strong></p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[31]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+x <span class="o">=</span> sample<span class="p">(</span><span class="m">10</span><span class="p">)</span>
+z <span class="o">=</span> c<span class="p">()</span>
+j <span class="o">=</span> <span class="m">1</span>
+<span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> <span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">){</span>
+    <span class="kr">if</span><span class="p">(</span>x<span class="p">[</span>i<span class="p">]</span> <span class="o">&gt;=</span> <span class="m">5</span><span class="p">){</span>
+        z<span class="p">[</span>j<span class="p">]</span> <span class="o">=</span> x<span class="p">[</span>i<span class="p">]</span>
+        j <span class="o">=</span> j <span class="o">+</span> <span class="m">1</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+print<span class="p">(</span>z<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+[1]  7  9 10  6  5  8
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[32]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+<span class="c1">#Equivalent vectorized code</span>
+
+z <span class="o">=</span> x<span class="p">[</span>x <span class="o">&gt;=</span> <span class="m">5</span><span class="p">]</span>
+print<span class="p">(</span>z<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+[1]  7  9 10  6  5  8
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To make a long story short, <strong>writing vectorized code is nothing but using only vectorized opearations when dealing with vectors, or more generally with arrays</strong>. You should be able to go back an forth between standard <code>for</code>, <code>if</code>, <code>else</code> code and corresponding vectorized code. </p>
+<p>Using only the following functions and operations on the basic types will generate vectorized code:</p>
+<ul>
+<li><p><strong><a href="http://www.statmethods.net/management/functions.html">Numeric fuctions and operations</a>:</strong> </p>
+<pre><code>  abs(x)
+  sqrt(x)     
+  ceiling(x) 
+  floor(x)     
+  trunc(x) 
+  round(x, digits=n) 
+  cos(x), sin(x), tan(x)     also acos(x), cosh(x), acosh(x), etc.
+  log(x) 
+
+  +   -   *   /   %% (modulo)   %/% (integer division)   ^ 
+</code></pre></li>
+<li><p><strong>Boolean functions and operations:</strong></p>
+<pre><code>  any(x) (returns true if any of the elemenst in x is true, otherwise false)
+  all(x) (returns true if all the elements in x are true, otherwise false)
+  &amp; (and)   | (or)   ! (not)
+  &lt;   &gt;   &lt;=   &gt;=   ==   !=
+</code></pre></li>
+<li><p><strong><a href="http://www.statmethods.net/management/functions.html">Character functions and operations</a>:</strong> </p>
+<pre><code>  paste(x, y, etc., sep=s)
+  substr(x, start=i, stop=j)
+  grep(pattern, x , ignore.case=FALSE, fixed=FALSE)
+  sub(pattern, replacement, x, ignore.case =FALSE, fixed=FALSE)
+  strsplit(x, split)
+  toupper(x)
+  tolower(x)
+</code></pre></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>These operation are <strong>vectorized</strong> way: i.e., they are performed <strong>component wise</strong>. </p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Vector-hidden-attributes:-names,-class,-and-dim">Vector hidden attributes: names, class, and dim<a class="anchor-link" href="#Vector-hidden-attributes:-names,-class,-and-dim">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>R vectors have a number of <strong>attributes</strong> (different from the vector elements) that can be set using <strong>special functions</strong>. These attributes condition the way vectors are handled in computation and the way vectors are displayed while printed or evaluated. Attributes can be displayed using the function</p>
+<pre><code>attributes(x)
+</code></pre><p>which returns a list of the attributes set for <code>x</code>.</p>
+<p>By default, a vector has no attributes set, and the function <code>attributes</code> will return NULL upon a vector with no attribute set. Here is a list of the special functions that will set vector attributes:</p>
+<p>The function <code>names</code> used as followed</p>
+<pre><code>names(x) = labels
+</code></pre><p>will set the names attribute specifying the vector element labels using the strings in the character vector <code>labels</code>.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[51]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+x <span class="o">=</span> c<span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">4</span><span class="p">,</span><span class="m">5</span><span class="p">,</span><span class="m">6</span><span class="p">,</span><span class="m">7</span><span class="p">,</span><span class="m">8</span><span class="p">)</span>
+print<span class="p">(</span>x<span class="p">)</span>
+
+names<span class="p">(</span>x<span class="p">)</span> <span class="o">=</span> c<span class="p">(</span><span class="s">&#39;A&#39;</span><span class="p">,</span><span class="s">&#39;B&#39;</span><span class="p">,</span><span class="s">&#39;C&#39;</span><span class="p">,</span><span class="s">&#39;D&#39;</span><span class="p">,</span><span class="s">&#39;E&#39;</span><span class="p">,</span><span class="s">&#39;F&#39;</span><span class="p">,</span><span class="s">&#39;G&#39;</span><span class="p">,</span><span class="s">&#39;H&#39;</span><span class="p">)</span>
+NL<span class="p">()</span>
+print<span class="p">(</span>x<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+[1] 1 2 3 4 5 6 7 8
+
+
+A B C D E F G H 
+1 2 3 4 5 6 7 8 
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The function <code>class</code> used as followed</p>
+<pre><code>class(x) = className
+</code></pre><p>will give the vector <code>x</code> the class name stored in the string <code>className</code>. We will come back to classes in the <code>list</code> section.     </p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[52]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+print<span class="p">(</span>class<span class="p">(</span>x<span class="p">))</span>
+
+class<span class="p">(</span>x<span class="p">)</span> <span class="o">=</span> <span class="s">&#39;Cookie&#39;</span>
+
+print<span class="p">(</span>class<span class="p">(</span>x<span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+[1] &quot;numeric&quot;
+[1] &quot;Cookie&quot;
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The function <code>dim</code> used as followed</p>
+<pre><code>dim(x) = dimVect
+</code></pre><p>will set the dimension attribute of <code>x</code> to the integer vector <code>dimVect</code>. For instance, setting the dimension attribute to $(2,3)$ will tell R to organize the elements contained in the vector <code>x</code> as an <strong>array</strong> (or here a <strong>matrix</strong>) with 2 rows and 3 colums. </p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[53]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+dim<span class="p">(</span>x<span class="p">)</span> <span class="o">=</span> c<span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">4</span><span class="p">)</span>
+print<span class="p">(</span>x<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+     [,1] [,2] [,3] [,4]
+[1,]    1    3    5    7
+[2,]    2    4    6    8
+attr(,&quot;class&quot;)
+[1] &quot;Cookie&quot;
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If we set the dimenstion attribute to be $(2,2,2)$, this will tell R to interpret <code>x</code> has a 3D array of numbers, the first <strong>axis</strong> having 2 columns, the second and the third axis as well:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[54]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+dim<span class="p">(</span>x<span class="p">)</span> <span class="o">=</span> c<span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">2</span><span class="p">)</span>
+print<span class="p">(</span>x<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+, , 1
+
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    4
+
+, , 2
+
+     [,1] [,2]
+[1,]    5    7
+[2,]    6    8
+
+attr(,&quot;class&quot;)
+[1] &quot;Cookie&quot;
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To create directly multidimentional arrays, without first creating a vector and setting its dimension attribute, one can use the function</p>
+<pre><code>x = matrix(aVect, ncol=k, nrow=l) (for 2D arrays or matrix)
+x = array(aVect, dim=c(k,l,m,o,p))
+</code></pre><p>All the vectorized operations we show above will be performed on the underlying &quot;flat&quot; vector, and the result will be interpreted back as an array of the corresponding dimension.</p>
+<p>Conclusion: basic types in R are vectors with dimension: hence <strong>arrays</strong>!!!! That&#39;s why some people call this vector programming, <strong>array programming</strong>. This is completely similar to what we saw with Numpy arrays!</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[57]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+A <span class="o">=</span> matrix<span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">25</span><span class="p">,</span> ncol<span class="o">=</span><span class="m">5</span><span class="p">)</span>
+print<span class="p">(</span>A<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    6   11   16   21
+[2,]    2    7   12   17   22
+[3,]    3    8   13   18   23
+[4,]    4    9   14   19   24
+[5,]    5   10   15   20   25
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[58]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+B <span class="o">=</span> array<span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">8</span><span class="p">,</span> dim<span class="o">=</span>c<span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">2</span><span class="p">))</span>
+print<span class="p">(</span>B<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+, , 1
+
+     [,1] [,2]
+[1,]    1    3
+[2,]    2    4
+
+, , 2
+
+     [,1] [,2]
+[1,]    5    7
+[2,]    6    8
+
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Recycling-or-Broadcasting-(Python-term)">Recycling or Broadcasting (Python term)<a class="anchor-link" href="#Recycling-or-Broadcasting-(Python-term)">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>When vectorial operations involve vectors of <strong>different size</strong>, R will <strong>cycle</strong> through the elements of the smallest vector, as to make the two involved vectors of <strong>equal length</strong>. Then the vectorized operation will be performed on the equal length vectors that result:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[59]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+a <span class="o">=</span> c<span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">);</span> b<span class="o">=</span>c<span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">1</span><span class="p">)</span>
+print<span class="p">(</span>a<span class="o">+</span>b<span class="p">)</span>
+print<span class="p">(</span>a<span class="o">*</span>b<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+[1] 3 4 3 4
+[1] 2 3 2 3
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[60]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+x <span class="o">=</span> paste<span class="p">(</span>c<span class="p">(</span><span class="s">&#39;X&#39;</span><span class="p">,</span><span class="s">&#39;Y&#39;</span><span class="p">),</span> c<span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">4</span><span class="p">),</span> <span class="s">&#39;#&#39;</span><span class="p">,</span> sep<span class="o">=</span><span class="s">&#39;&#39;</span><span class="p">)</span>
+print<span class="p">(</span>x<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+[1] &quot;X1#&quot; &quot;Y2#&quot; &quot;X3#&quot; &quot;Y4#&quot;
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Applying-function-to-vectors">Applying function to vectors<a class="anchor-link" href="#Applying-function-to-vectors">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Suppose we have a function that takes a scalar $a$ (i.e. a vector of length 1) and return a vector $y$ of a fixed length $n$:</p>
+<p>$$f:a \longrightarrow \big(f_1(a),\,\dots,\, f_m(a)\big)$$</p>
+<p>At times, we&#39;d like to apply the function $f$ to each component of a given vector $x=(x_1,\dots, x_n)$ and have the $m$ vectors that result stored into a $m \times n$ matrix:</p>
+<p>$$\left( \begin{array}{ccc}
+f_1(x_{1}) &amp; f_1(x_{2}) &amp; \cdots &amp; f_1(x_{n}) \\
+f_2(x_{1}) &amp; f_2(x_{2}) &amp; \cdots &amp; f_2(x_{n}) \\
+\vdots &amp;        &amp;        &amp; \vdots \\
+f_m(x_{1}) &amp; f_m(x_{2}) &amp; \cdots &amp; f_m(x_{n})
+\end{array} \right)
+$$</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let&#39;s try to do that with the following function that, given a scalar, returns a vector of length 3:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[69]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+f <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>a<span class="p">)</span> <span class="kr">return</span><span class="p">(</span>c<span class="p">(</span>a<span class="p">,</span> a<span class="o">^</span><span class="m">2</span><span class="p">,</span> a<span class="o">^</span><span class="m">3</span><span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>A non-vectorized way to do that would be the following:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[71]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+x <span class="o">=</span> <span class="m">1</span><span class="o">:</span><span class="m">5</span>
+
+M <span class="o">=</span> matrix<span class="p">(</span>rep<span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">15</span><span class="p">),</span> ncol<span class="o">=</span><span class="m">5</span><span class="p">)</span>
+
+<span class="kr">for</span> <span class="p">(</span>j <span class="kr">in</span> <span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">){</span>
+    <span class="kr">for</span><span class="p">(</span>i <span class="kr">in</span> <span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">){</span>
+        M<span class="p">[</span>i<span class="p">,</span> j<span class="p">]</span> <span class="o">=</span> f<span class="p">(</span>x<span class="p">[</span>j<span class="p">])[</span>i<span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+print<span class="p">(</span>M<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    2    3    4    5
+[2,]    1    4    9   16   25
+[3,]    1    8   27   64  125
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The <strong>vectorized way</strong> of doing this is to use one of the <strong><a href="http://www.stat.berkeley.edu/users/spector/s133/R-6a.html">apply family functions</a></strong></p>
+<pre><code>sapply(x, f)
+</code></pre><p>that will do just that:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[76]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+M <span class="o">=</span> sapply<span class="p">(</span>x<span class="p">,</span> f<span class="p">)</span>
+print<span class="p">(</span>M<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    2    3    4    5
+[2,]    1    4    9   16   25
+[3,]    1    8   27   64  125
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Applying-function-to-matrices">Applying function to matrices<a class="anchor-link" href="#Applying-function-to-matrices">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Suppose now that we want to apply a given function $f$ to the rows or columns of a matrix $A$ and that the result be organized into a matrix whose columns contained the outputs of $f$ when applied to the rows or columns of $A$.  </p>
+<p>For that one can use the following function from the <strong>apply family</strong>:</p>
+<pre><code>apply(A, axis, f)
+</code></pre><p>where $f$ will be applied sequencially to the <strong>rows</strong> of <code>A,</code> if <code>axis=1</code>, or to the <strong>columns</strong> of <code>A</code> if <code>axis=2</code>.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[77]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+A <span class="o">=</span> matrix<span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">9</span><span class="p">,</span> ncol<span class="o">=</span><span class="m">3</span><span class="p">)</span>
+
+row.sum <span class="o">=</span> apply<span class="p">(</span>A<span class="p">,</span> <span class="m">1</span><span class="p">,</span> sum<span class="p">)</span>
+col.sum <span class="o">=</span> apply<span class="p">(</span>A<span class="p">,</span> <span class="m">2</span><span class="p">,</span> sum<span class="p">)</span>
+
+print<span class="p">(</span>A<span class="p">);</span>NL<span class="p">();</span> print<span class="p">(</span>row.sum<span class="p">);</span> NL<span class="p">();</span> print<span class="p">(</span>col.sum<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+
+
+[1] 12 15 18
+
+
+[1]  6 15 24
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Subsetting-vectors-(and-arrays)">Subsetting vectors (and arrays)<a class="anchor-link" href="#Subsetting-vectors-(and-arrays)">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You need to know how to retrieve (and modify if needed) <strong>subsets</strong> of vectors (and matrices), using the <strong>bracket operator:</strong></p>
+<pre><code>y = x[ind] (copy of a subset of x into the variable y)
+x[ind] = a (modification of x itself)
+</code></pre><p>where <code>ind</code> is a vector of the same size of the vector x, which can be</p>
+<ul>
+<li><strong>Boolean vectors:</strong>  <code>x[ind]</code> is a handle on the elements of <code>x</code> whose indices correspond to elements in <code>ind</code> with value <code>TRUE</code>.  </li>
+</ul>
+<ul>
+<li><strong>integer vectors:</strong> <code>x[ind]</code> is a handle on the elements of <code>x</code> whose indices are in <code>ind</code>.  </li>
+</ul>
+<ul>
+<li><strong>character vectors:</strong> <code>x[ind]</code> is a handle on the elements of <code>x</code> whose labels (or names) are in <code>ind</code>. </li>
+</ul>
+<p><strong>Remark:</strong> Recall the two ways of naming to elements of a vector:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[79]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+v <span class="o">=</span> c<span class="p">(</span><span class="s">&#39;a&#39;</span><span class="o">=</span><span class="m">1</span><span class="p">,</span> <span class="s">&#39;b&#39;</span><span class="o">=</span><span class="m">2</span><span class="p">)</span>
+print<span class="p">(</span>v<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+a b 
+1 2 
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[80]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+w <span class="o">=</span> c<span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="m">4</span><span class="p">)</span>
+names<span class="p">(</span>w<span class="p">)</span> <span class="o">=</span> c<span class="p">(</span><span class="s">&#39;Bob&#39;</span><span class="p">,</span> <span class="s">&#39;Luc&#39;</span><span class="p">)</span>
+
+print<span class="p">(</span>w<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+Bob Luc 
+  3   4 
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Remark:</strong> If <code>ind</code> is an integer vector with non-negative entries, than <code>x[-ind]</code> will keep only the elements in <code>x</code> whose indices are not in <code>ind</code>.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[72]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+x <span class="o">=</span> <span class="m">1</span><span class="o">:</span><span class="m">10</span>
+names<span class="p">(</span>x<span class="p">)</span> <span class="o">=</span> LETTERS<span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">]</span>
+
+
+print<span class="p">(</span>x<span class="p">)</span>
+
+y <span class="o">=</span> x<span class="p">[</span><span class="o">-</span>c<span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">4</span><span class="p">)]</span>
+
+print<span class="p">(</span>y<span class="p">)</span>
+
+x<span class="p">[</span><span class="o">-</span>c<span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">4</span><span class="p">)]</span> <span class="o">=</span> <span class="m">444</span>
+
+print<span class="p">(</span>x<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+ A  B  C  D  E  F  G  H  I  J 
+ 1  2  3  4  5  6  7  8  9 10 
+ A  E  F  G  H  I  J 
+ 1  5  6  7  8  9 10 
+  A   B   C   D   E   F   G   H   I   J 
+444   2   3   4 444 444 444 444 444 444 
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Remark:</strong> Subsetting for matrices, arrays, and data frames works exaclty the same, except that we have now several axis to specify ranges to:</p>
+<pre><code>A[ind1, ind2]
+</code></pre><p>In this case: </p>
+<pre><code>A[ind1, ] &quot;means&quot; only rows as specified by ind1 BUT ALL COLUMNS
+A[, ind2] &quot;means&quot; only col as specified by ind2, BUT ALL ROWS
+</code></pre>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Object-oriented-programming-in-R:-List-and-Classes">Object-oriented programming in R: List and Classes<a class="anchor-link" href="#Object-oriented-programming-in-R:-List-and-Classes">&#182;</a></h2>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In R, <strong>vectors</strong> are the <strong>basic data types</strong> (representing statistical variables or columns in a data table), while <strong>lists</strong> are the <strong>basisc data structures</strong> (representing variable values for sample individuals or data table rows). </p>
+<p>Lists are <strong>heterogeneous and labelled containers</strong>. Its elements can have a <strong>name</strong> or <strong>label</strong> and they can be of any type, including lists. </p>
+<p>Lists are the building block of (S3) object oriented programming in R. </p>
+<p>Similarly to vectors, list can have <strong>special attributes set</strong> through <strong>sepcial functions</strong>:</p>
+<pre><code>names(x) = labels
+class(x) = className
+</code></pre><p>These functions works the same as for vectors. </p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="List-creation">List creation<a class="anchor-link" href="#List-creation">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As example, we create a list whose elements are named according the variable names:</p>
+<ul>
+<li><strong>first element</strong> (with label &#39;employee&#39;): a character vector with element</li>
+</ul>
+<ul>
+<li><strong>second element</strong> (with label &#39;childrenAges&#39;): a character vector with two elements</li>
+</ul>
+<ul>
+<li><strong>third element</strong> (with label &#39;luckyMarix&#39;): a $5\times 5$ matrix</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[92]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+x <span class="o">=</span> list<span class="p">(</span>Employee<span class="o">=</span><span class="s">&#39;Bob Durant&#39;</span><span class="p">,</span> childrenAges<span class="o">=</span>c<span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">),</span> luckyMatrix<span class="o">=</span>matrix<span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">25</span><span class="p">,</span>ncol<span class="o">=</span><span class="m">5</span><span class="p">))</span>
+print<span class="p">(</span>x<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+$Employee
+[1] &quot;Bob Durant&quot;
+
+$childrenAges
+[1] 1 3
+
+$luckyMatrix
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    6   11   16   21
+[2,]    2    7   12   17   22
+[3,]    3    8   13   18   23
+[4,]    4    9   14   19   24
+[5,]    5   10   15   20   25
+
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Subsetting-with-the-single-bracket-operator">Subsetting with the single bracket operator<a class="anchor-link" href="#Subsetting-with-the-single-bracket-operator">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>One can retrieve a sublist $y$ from a list $x$ as for vectors using the <strong>single bracket operator:</strong></p>
+<pre><code>y = x[ind]
+</code></pre><p>where, again, the range <code>ind</code> can be </p>
+<ul>
+<li>a integer vector of indices</li>
+<li>a character vector of labels</li>
+</ul>
+<p><strong>Remark</strong> Since the single bracket operator return a <strong>sublist</strong>, the following subsetting</p>
+<pre><code>y = x[i]
+y = x[label]
+</code></pre><p>will return <strong>a list with one element</strong> and not the <strong>element itself</strong>. For instance, in our example</p>
+<pre><code>x[3]
+</code></pre><p>is not a matrix, but a list with one element containing a matrix. This can lead to nasty errors, if not paid due care.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[84]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+print<span class="p">(</span>x<span class="p">[</span><span class="m">3</span><span class="p">])</span>
+print<span class="p">(</span>class<span class="p">(</span>x<span class="p">[</span><span class="m">3</span><span class="p">]))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+$luckyMatrix
+$luckyMatrix[[1]]
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    6   11   16   21
+[2,]    2    7   12   17   22
+[3,]    3    8   13   18   23
+[4,]    4    9   14   19   24
+[5,]    5   10   15   20   25
+
+
+[1] &quot;list&quot;
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Double-bracket-operator-and-dollar-sign">Double bracket operator and dollar sign<a class="anchor-link" href="#Double-bracket-operator-and-dollar-sign">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To retrieve the actual list elements, one needs to use the <strong>double bracket operator</strong> or the <em>*dollar sign</em>:</p>
+<pre><code>y = x$elementLabel
+y = x[[&#39;elementLabel&#39;]]
+y = x[[i]]
+</code></pre>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[93]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+print<span class="p">(</span>x<span class="p">[[</span><span class="m">3</span><span class="p">]])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    6   11   16   21
+[2,]    2    7   12   17   22
+[3,]    3    8   13   18   23
+[4,]    4    9   14   19   24
+[5,]    5   10   15   20   25
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[95]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+print<span class="p">(</span>x<span class="o">$</span>Employee<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+[1] &quot;Bob Durant&quot;
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[96]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+print<span class="p">(</span>x<span class="p">[[</span><span class="s">&#39;childrenAges&#39;</span><span class="p">]])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+[1] 1 3
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Applying-a-function-to-a-list">Applying a function to a list<a class="anchor-link" href="#Applying-a-function-to-a-list">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Let us consider the function</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[97]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+f <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>x<span class="p">)</span> <span class="kr">return</span><span class="p">(</span>x<span class="o">*</span>x<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>and the list</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[115]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+L <span class="o">=</span> list<span class="p">(</span>number<span class="o">=</span><span class="m">3</span><span class="p">,</span> vector<span class="o">=</span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">,</span>matrix<span class="o">=</span>matrix<span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">9</span><span class="p">,</span> ncol<span class="o">=</span><span class="m">3</span><span class="p">))</span>
+print<span class="p">(</span>L<span class="p">)</span>
+print<span class="p">(</span>names<span class="p">(</span>L<span class="p">))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+$number
+[1] 3
+
+$vector
+ [1]  1  2  3  4  5  6  7  8  9 10
+
+$matrix
+     [,1] [,2] [,3]
+[1,]    1    4    7
+[2,]    2    5    8
+[3,]    3    6    9
+
+[1] &quot;number&quot; &quot;vector&quot; &quot;matrix&quot;
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Suppose we want to apply the function $f$ above to each of the elements of the list $L$ so that the output is store back into a list. </p>
+<p>A <strong>non-vectorized way</strong> to do that would be:</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[121]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+Lout <span class="o">=</span> list<span class="p">(</span><span class="kc">NULL</span><span class="p">,</span> <span class="kc">NULL</span><span class="p">,</span> <span class="kc">NULL</span><span class="p">)</span>
+names<span class="p">(</span>Lout<span class="p">)</span> <span class="o">=</span> names<span class="p">(</span>L<span class="p">)</span>
+
+
+<span class="kr">for</span><span class="p">(</span>name <span class="kr">in</span> names<span class="p">(</span>L<span class="p">)){</span>
+       Lout<span class="p">[[</span>name<span class="p">]]</span> <span class="o">=</span> f<span class="p">(</span>L<span class="p">[[</span>name<span class="p">]])</span>
+<span class="p">}</span>
+
+print<span class="p">(</span>Lout<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+$number
+[1] 9
+
+$vector
+ [1]   1   4   9  16  25  36  49  64  81 100
+
+$matrix
+     [,1] [,2] [,3]
+[1,]    1   16   49
+[2,]    4   25   64
+[3,]    9   36   81
+
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The corresponding <strong>vectorized code</strong> makes us the the <strong>apply family function</strong></p>
+<pre><code>lapply(L, f)
+</code></pre><p>which return a list of whose elements are the output of the function $f$ while iterating on the elements of $L$.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[122]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+Lout <span class="o">=</span> lapply<span class="p">(</span>L<span class="p">,</span> f<span class="p">)</span>
+
+print<span class="p">(</span>Lout<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+$number
+[1] 9
+
+$vector
+ [1]   1   4   9  16  25  36  49  64  81 100
+
+$matrix
+     [,1] [,2] [,3]
+[1,]    1   16   49
+[2,]    4   25   64
+[3,]    9   36   81
+
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If one uses the <strong>apply family function</strong></p>
+<pre><code>sapply(L, f)
+</code></pre><p>the output list will be <strong>simplified</strong> into an array (i.e. vector, matrix, etc.) whenever it makes sense. </p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[124]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+L <span class="o">=</span> list<span class="p">(</span>sample<span class="p">(</span><span class="m">5</span><span class="p">),</span> sample<span class="p">(</span><span class="m">5</span><span class="p">),</span> sample<span class="p">(</span><span class="m">5</span><span class="p">))</span>
+Lout <span class="o">=</span> sapply<span class="p">(</span>L<span class="p">,</span> f<span class="p">)</span>
+
+print<span class="p">(</span>Lout<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+     [,1] [,2] [,3]
+[1,]    1   25   25
+[2,]   16    1    9
+[3,]   25    4   16
+[4,]    9    9    4
+[5,]    4   16    1
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Oject-and-classes-in-R-using-lists">Oject and classes in R using lists<a class="anchor-link" href="#Oject-and-classes-in-R-using-lists">&#182;</a></h3>
+</div>
+</div>
+</div>
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>In R, one create a class by simply setting the <strong>class attribute</strong> of a list. </p>
+<p>To insure that <strong>instances</strong> of a given class are always intanciated the same way, it is recommended to write a <strong>constructor</strong> for your class that will take care of creating the right number of elements with the rigth names, and setting the class attribute to the correct value.</p>
+<p>Access to the attributes is given using the <strong>dollar sign operator</strong></p>
+<pre><code>myClass$attribute
+</code></pre><p>using the fact that underlying our object is a mere list. This is the analog to the <strong>period operator</strong> in Python.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[126]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+bankAccount <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>holderName<span class="p">,</span> checking<span class="p">,</span> saving<span class="p">)</span>
+<span class="p">{</span>
+    object <span class="o">=</span> list<span class="p">(</span>holderName<span class="o">=</span>holderName<span class="p">,</span> checking<span class="o">=</span>checking<span class="p">,</span> saving<span class="o">=</span>saving<span class="p">)</span>
+    class<span class="p">(</span>object<span class="p">)</span> <span class="o">=</span> <span class="s">&#39;bankAccount&#39;</span>
+    <span class="kr">return</span><span class="p">(</span>object<span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[128]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+BobAccount <span class="o">=</span> bankAccount<span class="p">(</span>holderName<span class="o">=</span><span class="s">&#39;Bob Durant&#39;</span><span class="p">,</span> checking<span class="o">=</span><span class="m">12</span><span class="p">,</span> saving<span class="o">=</span><span class="m">0</span><span class="p">)</span>
+
+print<span class="p">(</span>class<span class="p">(</span>BobAccount<span class="p">))</span>
+
+saving <span class="o">=</span> BobAccount<span class="o">$</span>saving
+
+print<span class="p">(</span>saving<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+[1] &quot;bankAccount&quot;
+[1] 0
+
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Methods</strong> are just usual function whose names should follow a <strong>naming convention</strong></p>
+<pre><code>action.className(object, arg1, arg2, etc.)
+</code></pre><p>Then <strong>associated generic functions</strong> are created according to the <code>action</code></p>
+<pre><code>action = function(object, arg1, arg2, etc.)
+{
+     UseMethod(&#39;action&#39;,object)
+}
+</code></pre><p>Now if <code>x</code> is an object of <code>className</code>, invoking</p>
+<pre><code>action(x)
+</code></pre><p>will trigger the function </p>
+<pre><code>UseMethod(&#39;action&#39;,object)
+</code></pre><p>that will retrieve the string <code>className</code> from <code>object</code> and look up if a function with name</p>
+<pre><code>action.className
+</code></pre><p>exists. If yes, <code>UseMethod</code> will invoke this function with the corresponding argument.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[133]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+display.bankAccount <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>object<span class="p">)</span>
+<span class="p">{</span>
+    cat<span class="p">(</span><span class="s">&#39;Account holder&#39;</span><span class="p">,</span> object<span class="o">$</span>holderName<span class="p">,</span> <span class="s">&#39;has&#39;</span><span class="p">,</span> object<span class="o">$</span>checking<span class="p">,</span>
+        <span class="s">&#39;dollars in checking and&#39;</span><span class="p">,</span> object<span class="o">$</span>saving<span class="p">,</span> <span class="s">&#39;dollars in saving.&#39;</span><span class="p">)</span> 
+<span class="p">}</span>
+
+display <span class="o">=</span> <span class="kr">function</span><span class="p">(</span>object<span class="p">)</span>
+<span class="p">{</span>
+    UseMethod<span class="p">(</span><span class="s">&#39;display&#39;</span><span class="p">,</span> object<span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[135]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre><span class="o">%%</span>R
+
+display<span class="p">(</span>BobAccount<span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_text output_subarea ">
+<pre>
+Account holder Bob Durant has 12 dollars in checking and 0 dollars in saving.
+</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">
+In&nbsp;[]:
+</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class="highlight"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+     <!-- <hr/> -->
+     <div class="row">
+      <div class="span12 text-center">
+        <a href="#">Back to top</a>
+      </div>
+    </div>
+
+     <!-- Footer
+     ================================================== -->
+      
+      <footer class="footer">
+      <div class="span12 row-fluid footer-row">
+          <div class="span4">
+            <p>This web site does not host notebooks, it only renders notebooks available on other websites.</p>
+          </div>
+
+          <div class="span4">
+            <p>Thanks to <a href="http://www.rackspace.com">Rackspace</a> for hosting.</p>
+            <p>nbviewer GitHub <a href="https://github.com/ipython/nbviewer">repository</a>.</p>
+            <p>nbviewer <a href="https://github.com/ipython/nbviewer/blob/master/LICENSE.txt" target="_blank">license</a>.</p>
+          </div>
+
+          <div class="span4">
+            
+
+              
+                <p>
+                    nbviewer version:
+                    <a href="https://github.com/ipython/nbviewer/commit/a0d0d998c06024a017de6940edc065a72f2f8f03">a0d0d99</a>
+                </p>
+              
+            
+
+<p class="text-muted">
+    IPython version: 3.0.0-dev
+    
+    (<a href="https://github.com/ipython/ipython/commit/71ff8f9">
+      71ff8f9
+    </a>)
+    
+</p>
+
+
+            
+
+            
+
+<p class="text-muted">
+Rendered <span class='date' data-date='Thu, 01 May 2014 16:47:55 UTC' title='Thu, 01 May 2014 16:47:55 UTC'>(Thu, 01 May 2014 16:47:55 UTC)</span>
+</p>
+
+
+          </div>
+      </div>
+      </footer>
+      
+
+    </div><!-- /container -->
+
+    <script src="/static/js/bootstrap-collapse.js"></script>
+    <script src="/static/components/headroom.js/dist/headroom.min.js"></script>
+    <script src="/static/components/headroom.js/dist/jQuery.headroom.min.js"></script>
+
+
+    
+    
+    
+    <script>
+    $(document).ready(
+                function(){
+                    $("#menubar").headroom({
+                        "tolerance": 5,
+                        "offset": 205,
+                        "classes": {
+                            "initial": "animated",
+                            "pinned": "slideInDown",
+                            "unpinned": "slideOutUp"
+                        }
+                    })
+                }
+            );
+    </script>
+
+
+    <!-- Analytics
+    ================================================== -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38683231-2']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <script>
+        var update_date  = function(){
+            var str = window.moment($('.date').data('date')).fromNow();
+            $('.date').text(str);
+        }
+        setInterval(update_date , 61*1000);
+        $(update_date);
+    </script>
+    <!--NEW RELIC Stop Perf Measurement-->
+    
+    <!--NEW RELIC End-->
+  </body>
+</html>
